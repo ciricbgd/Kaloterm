@@ -1,0 +1,39 @@
+Za promenu slajdera i pisanje blog teme,
+pri kacenju slike, neophodno je popuniti 
+polje 'opis slike'. U tom polji treba u
+jednoj recenici da se opise sta se nalazi
+na slici (na engleskom jeziku).
+
+Preporucene velicine za slike:
+-Slajder: 1200x800 (do 300kb)
+-Artikli: 300x300 (do 100kb)
+-Blog: 1000x670 (do 300kb)
+
+Formatiranje teksta:
+Voditi racuna o prelasku u novi red.
+Enter ne prelazi u novi red, vec se
+mora napisati <br>
+
+Dodatne opcije:
+<a href="www.neki_sajt.com">Naziv linka</a>
+<u>Podvucen tekst</u>
+Liste:
+  Lista sa tackom
+  <ul>
+     <li>Pas</li>
+     <li>Macka</li>
+     <li>Zec</li>
+  </ul>
+  Lista sa brojevima
+  <ol>
+     <li>Pas</li>
+     <li>Macka</li>
+     <li>Zec</li>
+  </ol>
+
+
+Pri unosenju artikala unositi cenu bez
+sufiksa rsd, to se automatski dodaje.
+
+Voditi racuna da tekst staje u polja,
+koristiti <br> ako prelazi.

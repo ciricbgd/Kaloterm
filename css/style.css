@@ -1,0 +1,694 @@
+@font-face {
+    font-family: 'Arimo';
+    src: url('Arimo-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #444;
+    font-family: Arimo;
+}
+
+.cleaner {
+    clear: both;
+}
+
+#wrapper {
+    width: 80vw;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1500px) {
+    #wrapper {
+        width: 100%;
+    }
+}
+
+img {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .page {
+        height: auto;
+        width: auto;
+    }
+}
+
+/*--------------------------Background scroll start----------------------------------*/
+
+body {
+    background-image: url('../img/background2.svg');
+    background-size: 15%;
+}
+
+/*--------------------------Background scroll end----------------------------------*/
+
+/*--------------------------Header start----------------------------------*/
+
+#naslov,
+#logo,
+#title,
+#title h1,
+#title h3,
+#info {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+#naslov {
+    width: 100%;
+    display: block;
+    margin-bottom: 3vmin;
+    padding-left: 1vmin;
+    height: 25vmin;
+}
+
+#logo {
+    background-image: url('../img/logo.png');
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 25vmin;
+    padding-top: 25vmin;
+}
+
+#title {
+    display: inline-block;
+    width: 50%;
+}
+
+#title h1 {
+    font-size: 14vmin;
+    font-family: Poppins;
+    transform: translateY(5vmin);
+}
+
+#title h3 {
+    font-size: 3vmin;
+    transform: translateX(0.7vmin);
+}
+
+#info {
+    display: inline-block;
+    text-align: right;
+    float: right;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 1vmin;
+}
+
+#info p {
+    font-size: 2vmin;
+}
+
+@media only screen and (max-width: 800px) {
+    #info {
+        justify-content: flex-start;
+        margin: 2vmin 2vmin 0 0;
+    }
+}
+
+/*--------------------------Header end----------------------------------*/
+
+/*--------------------------Menu start----------------------------------*/
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    background-color: lightskyblue;
+    background: linear-gradient(lightskyblue 94%, #73a9cb 5%);
+    display: inline-block;
+    width: 20%;
+    height: 50px;
+    border-radius: 3px;
+}
+
+nav ul li:hover {
+    background: linear-gradient(#82c5ee 94%, #73a9cb 5%);
+}
+
+nav ul li:active {
+    background: none;
+    background-color: #73a9cb;
+}
+
+nav ul li a,
+nav ul li p {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav ul li:nth-child(1) {
+    width: 5%;
+    min-width: 45px;
+}
+
+nav ul li a img {
+    height: 55%;
+}
+
+@media only screen and (max-width: 770px) {
+
+    nav ul li {
+        background: linear-gradient(lightskyblue 93%, #73a9cb 5%);
+        border-right: 2px solid #73a9cb;
+        width: auto;
+        height: 40px;
+        border-radius: 1px;
+        flex: 2;
+    }
+
+    nav ul li:nth-child(1) {
+        width: auto;
+        min-width: 45px;
+        flex: 1;
+    }
+    nav ul li:nth-child(5) {
+        border: none;
+    }
+
+    nav ul li a,
+    nav ul li p {
+        font-size: 15px;
+
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    nav ul li a,
+    nav ul li p {
+        font-size: 12px;
+    }
+}
+
+/*--------------------------Slider start----------------------------------*/
+
+#slider {
+    margin-top: 5vmin;
+    width: 100%;
+    height: 61.7vmin;
+}
+
+#slider li {
+    height: 100%;
+    width: 100%;
+}
+
+#slider img {
+    object-fit: cover;
+}
+
+.descritpion_holder {
+    height: 100%;
+    padding-top: 70%;
+}
+
+.slider_description {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(25, 25, 25, 0.5) 50%);
+    width: 100%;
+    position: absolute;
+    height: 30%;
+    bottom: 0;
+}
+
+#slider h1,
+#slider p {
+    color: white;
+    margin-left: 5%;
+    width: 60%;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+#slider h1 {
+    margin-top: 10px;
+    font-size: 4vmin;
+    position: absolute;
+    bottom: 7vmin;
+}
+
+#slider p {
+    font-size: 2vmin;
+    position: absolute;
+    bottom: 4vmin;
+}
+
+@media only screen and (max-width: 700px) {
+    #slider h1 {
+        font-size: 6vmin;
+    }
+    #slider p {
+        font-size: 2vmin;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    #slider {
+        margin: 0;
+    }
+}
+
+/*--------------------------Slider end----------------------------------*/
+
+/*--------------------------O nama start----------------------------------*/
+
+#o_nama {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+#mi_smo {
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 13vw;
+    width: 100%;
+    flex: 0 0 100%;
+}
+
+#o_nama article {
+    width: 25%;
+}
+
+.attributes {
+    background-image: url('../img/attributes.gif');
+    width: 60%;
+    height: 0;
+    padding-bottom: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border-radius: 100px;
+    background-size: 300%;
+    background-position: 0 0;
+
+}
+
+#o_nama article:nth-of-type(2) .attributes {
+    background-position: 100%;
+}
+
+#o_nama article:nth-of-type(3) .attributes {
+    background-position: 200%;
+}
+
+#o_nama article h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#o_nama main {
+    flex: 0 0 80%;
+    margin-top: 70px;
+    font-size: 20px;
+
+}
+
+@media only screen and (min-width: 1300px) {
+    #mi_smo {
+        font-size: 100px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .attributes {
+        width: 78%;
+        padding-bottom: 78%;
+
+    }
+    #o_nama article h2 {
+        font-size: 4vw;
+    }
+    #o_nama main {
+        flex: 0 0 90%;
+        font-size: 4vw;
+
+    }
+}
+
+/*--------------------------O nama end----------------------------------*/
+
+/*--------------------------Mapa start----------------------------------*/
+
+#kontakt_holder {
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+#map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#kontakt {
+    background-color: rgba(100, 150, 190, 0.7);
+    font-size: 2vw;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#kontakt p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 3vw;
+    font-size: 2.6vw;
+    color: white;
+}
+
+@media only screen and (min-width: 1200px) {
+    #kontakt p {
+        font-size: 25px;
+    }
+}
+
+/*--------------------------Mapa end----------------------------------*/
+
+/*--------------------------Blog start----------------------------------*/
+
+#blog {
+    margin-top: 40px;
+}
+
+.blog img {
+    max-width: 50%;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.kaloterm_article {
+    margin-bottom: 40px;
+    border-radius: 15px;
+    background-color: rgb(186, 229, 255);
+    padding-bottom: 20px;
+}
+
+.kaloterm_article hgroup {
+    padding: 5px;
+    background-color: rgb(127, 204, 250);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.blog hgroup {
+    margin-top: 20px;
+}
+
+.kaloterm_article hgroup h1 {
+    margin-left: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+.kaloterm_article hgroup h6 {
+    margin-left: 20px;
+}
+
+.blog p {
+    padding: 5px;
+    margin-left: 20px;
+    text-overflow: ellipsis;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.shop p {
+    margin-left: 20px;
+}
+
+.shop form,
+.rslides form,
+.blog form {
+    float: right;
+}
+
+input {
+    border: none;
+}
+
+.rslides form {
+    display: relative;
+    transform: translate(0px, 40px);
+}
+
+/*--------------------------Blog end----------------------------------*/
+
+/*--------------------------Shop start----------------------------------*/
+
+#shop {
+    margin-top: 40px;
+}
+
+.shop {
+    width: 20%;
+    margin-left: 3.14%;
+    margin-right: 3.14%;
+    display: inline-block;
+    vertical-align: top;
+    min-height: 400px;
+}
+
+@media only screen and (min-width: 1427px) {
+    .shop:nth-child(4n + 1) {
+        margin-left: 0px;
+    }
+    .shop:nth-child(4n + 4) {
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 1428px) and (min-width: 1185px) {
+    .shop {
+        width: 20%;
+        margin-left: 3.1%;
+        margin-right: 3.1%;
+    }
+    .shop:nth-child(4n + 1) {
+        margin-left: 0px;
+    }
+    .shop:nth-child(4n + 4) {
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 1184px) and (min-width: 768px) {
+    .shop {
+        width: 25%;
+        margin-left: 5.85%;
+        margin-right: 5.85%;
+        min-height: 350px;
+    }
+    .shop:nth-child(3n + 1) {
+        margin-left: 0px;
+    }
+    .shop:nth-child(3n + 3) {
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .shop {
+        width: 40%;
+        margin-left: 9.14%;
+        margin-right: 9.14%;
+        min-height: 300px;
+    }
+    .shop:nth-child(2n + 1) {
+        margin-left: 0px;
+    }
+    .shop:nth-child(2n + 2) {
+        margin-right: 0px;
+    }
+}
+
+.shop hgroup h1 {
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+.shop hgroup h3 {
+    margin-left: 20px;
+}
+
+.shop p {
+    font-size: 13px;
+}
+
+.shop img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*--------------------------Shop end----------------------------------*/
+
+/*--------------------------Admin start----------------------------------*/
+
+#secret_button {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    z-index: 999;
+    bottom: 0;
+}
+
+.admin_window {
+    display: none;
+    width: 50vw;
+    max-width: 500px;
+    background-color: #4d83b2;
+    margin: 0 auto;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 999;
+    border-radius: 20px;
+}
+
+.admin_window form {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.admin_window p {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.admin_window form input,
+form label,
+textarea {
+    font-size: 20px;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#btnLogin {
+    font-size: 20px;
+    width: 40%;
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+    min-width: 95px;
+    background-color: #4db25d;
+    color: white;
+}
+
+.accept {
+    font-size: 20px;
+    width: 40%;
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+    min-width: 95px;
+    background-color: #4db25d;
+    color: white;
+}
+
+.admin_window p:nth-of-type(2) {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5)
+}
+
+.button {
+    cursor: pointer;
+}
+
+.delete {
+    text-align: center;
+    color: white;
+    background-color: #b24d4d;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.close {
+    float: right;
+}
+
+#admin_panel {
+    background-color: #4d83b2;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: right;
+}
+
+#admin_panel * {
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 12px;
+    color: white;
+
+}
+
+/*--------------------------Admin end----------------------------------*/
+
+/*--------------------------Acitavanje start----------------------------------*/
+
+#page_shop,
+#page_blog {
+    display: none;
+}
+
+/*--------------------------Ucitavanje end----------------------------------*/
